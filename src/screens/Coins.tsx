@@ -84,7 +84,7 @@ function Coins() {
             {coinsDataArray?.map((coin) => (
               <CoinListItem key={coin.id}>
                 <Link
-                  to={`/${coin.id}`}
+                  to={`${coin.id}`}
                   state={{ coinName: coin.name }}
                   onMouseOver={() => {
                     handleMouseOver(coin.id);

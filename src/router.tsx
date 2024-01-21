@@ -8,7 +8,7 @@ import ChartOrPrice from "./screens/ChartOrPrice";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/crypto-tracker",
     element: <Home />,
     children: [
       { index: true, element: <Coins /> },

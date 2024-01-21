@@ -10,9 +10,10 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.52",
-    "@types/react": "^18.2.21",
+    "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.7",
     "apexcharts": "^3.44.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
     "react-dom": "^18.2.0",
@@ -30,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +54,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-helmet": "^6.1.9"
-  }
+    "@types/react-helmet": "^6.1.11"
+  },
+  "homepage": "https://mingyukim7608.github.io/crypto-tracker"
 }

@@ -27,7 +27,7 @@ function Home() {
     <Container>
       <Header>
         <ThemeToggleButton />
-        <TitleLink to="/">Coins</TitleLink>
+        <TitleLink to="/crypto-tracker">Coins</TitleLink>
       </Header>
       <Outlet />
     </Container>

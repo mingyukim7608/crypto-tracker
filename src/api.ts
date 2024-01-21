@@ -65,7 +65,7 @@ export function useCoinHistoryQuery(coinId: string) {
       const now = Date.now();
       const anYearAgo = now - 1000 * 60 * 60 * 24 * 30 * 12;
       const response = await fetch(
-        `https://api.coincap.io/v2/assets/bitcoin/history?interval=d1&start=${anYearAgo}&end=${now}`
+        `https://api.coincap.io/v2/assets/${coinId}/history?interval=d1&start=${anYearAgo}&end=${now}`
       );
       if (!response.ok) {
         throw new Error(`Could not fetch coin candels. coin ID: ${coinId}`);
@@ -81,7 +81,7 @@ export async function fetchHistory(coinId: string) {
   const now = Date.now();
   const anYearAgo = now - 1000 * 60 * 60 * 24 * 30 * 12;
   const response = await fetch(
-    `https://api.coincap.io/v2/assets/bitcoin/history?interval=d1&start=${anYearAgo}&end=${now}`
+    `https://api.coincap.io/v2/assets/${coinId}/history?interval=d1&start=${anYearAgo}&end=${now}`
   );
   if (!response.ok) {
     throw new Error(`Could not fetch coin candels. coin ID: ${coinId}`);
